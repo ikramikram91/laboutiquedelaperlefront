@@ -1,0 +1,37 @@
+@media screen and (min-width: 800px) {
+    .container {
+      margin: 1em 2em;
+    }
+  }
+  .card{
+    width: 290px; 
+    
+}
+.card-img-top {
+    width: 288px;
+    height: 300px;
+   
+}
+
+h6{
+    color: rgb(255, 255, 255);
+}
+.fa-shopping-cart{
+color:rgb(255, 255, 255); ;
+}
+.carousel-control-prev{
+    color:black;
+     background-color:transparent;
+      border: none;
+}
+.carousel-control-next{
+    color:black;
+     background-color:transparent;
+      border: none;
+}
+.card-deck{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+ 
+  

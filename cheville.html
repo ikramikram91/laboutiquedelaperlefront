@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>shop</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	
+	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap" rel="stylesheet">
+
+</head>
+<!-- nav bar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+
+	<a href="home.html"> <img src="logo.png" id="logo" alt="logo"></a>
+	<h1>la boutique de la perle</h1>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+		aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+
+			<!-- modal connection -->
+			<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+				tabindex="-1">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<!-- div de l'entête du modale  -->
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalToggleLabel">Connection</h5>
+							<!-- button close  -->
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i
+									class="fas fa-times"></i></button>
+						</div>
+
+						<!-- div du formulaire de connection  methode d'envoie en post ne transite pas par l'url   -->
+						<form action="#" method="POST">
+
+							<!-- div du corps -->
+							<div class="modal-body">
+
+								<!-- div de l'input d'entrés du mail  -->
+								<div class="mb-3">
+									<a href="mailto:ikramdjellouli@hotmail.fr"></a>
+									<label for="recipient-name" class="col-form-label">Email</label>
+									<input type="email" class="form-control" id="recipient-email"
+										placeholder="mon.mail@hotmail.fr">
+								</div>
+
+								<!-- dive de l'entrée du mots de passe  -->
+								<div class="mb-3">
+									<label for="recipient-name" class="col-form-label"></label>
+									<input type="password" class="form-control" id="recipient-email"
+										placeholder="password">
+								</div>
+							</div>
+						</form>
+
+						<div class="modal-footer">
+							<!-- buton de connection -->
+							<button type="button" class="btn btn-info">connection</button>
+							<!-- buton dinscription qui ouvre un autre modale d'inscription -->
+							<button class="btn btn-dark" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+								data-bs-dismiss="modal">inscription</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+				aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalToggleLabel2">inscription</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i
+									class="fas fa-times"></i></button>
+						</div>
+
+						<!-- div du formulaire de connection  methode d'envoie en post ne transite pas par l'url   -->
+						<form action="#" method="POST">
+
+							<!-- div du corps -->
+							<div class="modal-body">
+								<!-- div du input name -->
+								<div class="mb-3">
+									<label for="recipient-name" class="col-form-label">Nom</label>
+									<input type="text" class="form-control" id="recipient-name" placeholder="nom">
+								</div>
+								<!-- div du input lastname -->
+								<div class="mb-3">
+									<label for="recipient-name" class="col-form-label">Prenom</label>
+									<input type="text" class="form-control" id="recipient-lastName"
+										placeholder="prenom">
+								</div>
+
+								<!-- div de l'input d'entrés du mail  -->
+								<div class="mb-3">
+									<a href="mailto:ikramdjellouli@hotmail.fr"></a>
+									<label for="recipient-name" class="col-form-label">Email</label>
+									<input type="email" class="form-control" id="recipient-email"
+										placeholder="mon.mail@hotmail.fr">
+								</div>
+
+								<!-- dive de l'entrée du mots de passe  -->
+								<div class="mb-3">
+									<label for="recipient-name" class="col-form-label">mots de passe</label>
+									<input type="password" class="form-control" id="recipient-email"
+										placeholder="password">
+								</div>
+								<!-- confirmation du mots de passe -->
+								<div class="mb-3">
+									<label for="recipient-name" class="col-form-label">confirmer mots de
+										passe</label>
+									<input type="password" class="form-control" id="recipient-email"
+										placeholder="confirmer password">
+								</div>
+						</form>
+					</div>
+					<!-- div du button d'envoie de message et de fermeture  -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-info">envoyer</button>
+					</div>
+				</div>
+			</div>
+	</div>
+	<a class="btn btn-info" data-bs-toggle="modal" href="#exampleModalToggle" role="button"><i
+			class="fas fa-user"></i></a>
+	<!-- fin modal connection -->
+
+
+	<!-- modal de contact -->
+	<button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal"
+		data-bs-whatever="@mdo"><i class="far fa-address-card"></i></button>
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<!-- entête -->
+					<h5 class="modal-title" id="exampleModalLabel">
+						message
+					</h5>
+					<!-- button close  -->
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i
+							class="fas fa-times"></i></button>
+				</div>
+				<!-- div du corps du modale -->
+				<div class="modal-body">
+					<!-- formulaire d'envoie de message en poste  -->
+					<form action="#" method="POST">
+						<!-- div du input name -->
+						<div class="mb-3">
+							<label for="recipient-name" class="col-form-label">Nom</label>
+							<input type="text" class="form-control" id="recipient-name" placeholder="nom">
+						</div>
+						<!-- div du input lastname -->
+						<div class="mb-3">
+							<label for="recipient-name" class="col-form-label">Prenom</label>
+							<input type="text" class="form-control" id="recipient-lastName" placeholder="prenom">
+						</div>
+						<div class="mb-3">
+							<!-- div du input mail -->
+							<label for="recipient-name" class="col-form-label">Email</label>
+							<input type="email" class="form-control" id="recipient-email"
+								placeholder="monmail@hotmail.fr">
+						</div>
+						<!-- div de la zone de texte libre du mesage -->
+						<div class="mb-3">
+							<label for="message-text" class="col-form-label">Message:</label>
+							<textarea class="form-control" id="message-text"></textarea>
+						</div>
+					</form>
+				</div>
+				<!-- div du button d'envoie de message et de fermeture  -->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-info">Send message</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- fin modale de contact -->
+
+	<!-- button panier -->
+	<a class="btn btn-info" role="button" href="panier.html"><i class="fas fa-shopping-cart"></i></a>
+
+
+
+
+	</ul>
+
+
+
+</nav>
+
+<!-- Button trigger modal -->
+
+
+<div id= "carousel-center" class="container ">
+
+	<div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+		<div class="carousel-indicators">
+		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		</div>
+		<div class="carousel-inner ">
+		  <div class="carousel-item active">
+				
+			<a href="bracelet.html"><img class="carousel" style="width:900px; display:block; margin-left:auto; margin-right:auto;text-align:center" src="img/bracelet.jpg" class="img-responsive" alt="image d'un bracelet"></a>
+				
+			<div class="carousel-caption d-none d-md-block">
+			  <h1 style="font-family: 'Dancing Script'; font-size: 30px; color: black;"> <strong>Bracelet</strong> </h1>
+			   <p style="color:black"> <strong>Cliquez sur l'image pour accéder aux produits </strong> </p>
+			</div>
+		  </div>
+		  <div class="carousel-item ">
+			  
+			<a href="cheville.html"><img class = "carousel" style="width:500px; display:block; margin-left:auto; margin-right:auto;text-align:center" src="img/cheville.jpg" class="img-responsive"  alt="image d'un bracelet de cheville"></a>
+			
+			<div class="carousel-caption d-none d-md-block">
+			  <h1 style="font-family: 'Dancing Script'; font-size: 30px; color: grey;">Bracelet de cheville</h1>
+			  <p>Cliquez sur l'image pour accéder aux produits</p>
+			</div>
+		  </div>
+		  <div class="carousel-item">
+			
+			<a href="hanche.html"><img class="carousel"  style="width:350px; display:block; margin-left:auto; margin-right:auto;text-align:center"src="img/hanche.jpg" class="img-responsive"  alt="image d'une ch'aîne de hanche"></a>
+			
+			<div class="carousel-caption d-none d-md-block">
+			  <h1 style="font-family: 'Dancing Script'; font-size: 30px; color: black;">Chaîne de hanche</h1>
+			  <p>Cliquez sur l'image pour accéder aux produits</p>
+			</div>
+		  </div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+		  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+		  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		  <span class="visually-hidden">Next</span>
+		</button>
+	  </div>
+	</div>
+
+
+<body>
+
+
+
+
+
+	<!-- 
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<div class="container-fluid d-flex ">
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent" aria-controls="navbarResponsive" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="bracelet.html"
+								style="font-family: 'Dancing Script'; font-size: 30px;"> <strong>Bracelet</strong> </a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="cheville.html"
+								style="font-family: 'Dancing Script'; font-size: 30px;"> <strong>Braclet
+									Cheville</strong> </a>
+						</li>
+
+						<li class="nav-item">
+							<a class="nav-link " href="hanche.html"
+								style="font-family: 'Dancing Script'; font-size: 30px;"> <strong>Bracelet
+									Hanche</strong> </a>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+		</nav>
+
+	</header> -->
+
+
+	<!-- main  -->
+	<main>
+
+
+
+		<div class="container-fluid">
+			<div class="card-deck">
+				<div class="card">
+					<a href="detaille_produit.html"><img class="d-block w-100"
+							src="2c1517f293e4f9b51355b39ec7bde3cd.jpg"></a>
+
+					<div class="d-flex justify-content-between " style="background-color: #343a40;">
+						<h5 class="justify-content-center text-light">Card title</h5>
+						<p style="color: aliceblue;">12 €</p>
+						<a href="panier.html" class="btn btn-outline-light "><i class="fas fa-shopping-cart"></i></a>
+					</div>
+				</div>
+
+
+				<div class="card">
+					<a href="detaille_produit.html"><img class="d-block w-100"
+							src="2c1517f293e4f9b51355b39ec7bde3cd.jpg"></a>
+
+					<div class="d-flex justify-content-between " style="background-color: #343a40;">
+						<h5 class="justify-content-center text-light">Card title</h5>
+						<p style="color: aliceblue;">12 €</p>
+						<a href="panier.html" class="btn btn-outline-light "><i class="fas fa-shopping-cart"></i></a>
+					</div>
+				</div>
+
+
+
+				<div class="card">
+					<a href="detaille_produit.html"><img class="d-block w-100"
+							src="2c1517f293e4f9b51355b39ec7bde3cd.jpg"></a>
+
+					<div class="d-flex justify-content-between " style="background-color: #343a40;">
+						<h5 class="justify-content-center text-light">Card title</h5>
+						<p style="color: aliceblue;">12 €</p>
+						<a href="panier.html" class="btn btn-outline-light "><i class="fas fa-shopping-cart"></i></a>
+					</div>
+				</div>
+
+
+
+
+
+
+		</div>
+
+
+	</main>
+
+
+	<!-- footer -->
+	<div class="footer-dark ">
+		<footer>
+	
+			<div class="container ">
+				<div class="row">
+					<div class="col-sm-6 col-md-3 item">
+						<h3>Services</h3>
+						<ul>
+							<li><a href="home.html">création de bijoux</a></li>
+	
+	
+						</ul>
+					</div>
+					<div class="col-sm-6 col-md-3 item">
+						<h3>About</h3>
+						<ul>
+							<li><a href="rgpd.html">Réglement sur la protection des données</a></li>
+							<li><a href="cgv.html">Condition générale de vente et d'utilisation</a></li>
+							<li><a href="#">Careers</a></li>
+						</ul>
+					</div>
+					<div class="col-md-6 item text">
+						<h3>La boutique de la perle</h3>
+						<p>La boutique de la perle est une boutique en ligne vous retrouverez des créations originales et
+							personnalisables. Bracelet, chaîne de hanche, et bracelet de cheville.
+							Suivez-nous sur Instagram et soyez à jour sur nos créations </p>
+					</div>
+					<div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i
+								class="icon ion-social-snapchat"></i></a><a href="#"><i
+								class="icon ion-social-instagram"></i></a></div>
+				</div>
+				<p class="copyright">La boutique de la perle © 2021</p>
+			</div>
+		</footer>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+</body>
+<script src="js/script.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+	integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+	crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+	integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+	crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+	integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+	crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+	integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+	crossorigin="anonymous"></script>
+
+</html>
